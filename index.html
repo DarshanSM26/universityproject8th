@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mining Industry Chatbot</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ───────── Welcome Screen ───────── -->
+  <div id="welcome-screen">
+    <div id="profile-icon">👤</div>
+
+    <div id="dropdown-menu">
+      <button id="login-btn">Login</button>
+      <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <img id="chatbot-icon" src="bot.jpg" alt="Chatbot Icon" />
+
+    <h1>Welcome to the Mining Industry Chatbot</h1>
+    <button id="start-chatting">💬 Start Chatting</button>
+  </div>
+
+  <!-- ───────── Login / Signup Modals ───────── -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="login-modal">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Email or Phone" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </div>
+  </div>
+
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="signup-modal">&times;</span>
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email or Phone" />
+      <input type="password" placeholder="Password" />
+      <button>Sign Up</button>
+    </div>
+  </div>
+
+  <!-- ───────── Sidebar ───────── -->
+  <aside id="sidebar">
+    <button id="history-btn">History</button>
+    <button id="clear-history-btn">Clear History</button>
+  </aside>
+
+  <!-- ───────── Chatbot Window ───────── -->
+  <section id="chatbot-container">
+    <header id="chatbot-header">
+      <span>Chatbot</span>
+      <button id="close-btn">&times;</button>
+    </header>
+
+    <main id="chatbot-body">
+      <div id="chatbot-messages"></div>
+    </main>
+
+    <footer id="chatbot-input-container">
+      <input id="chatbot-input" type="text" placeholder="Type a message…" />
+      <label id="file-upload-label" for="file-upload">➕</label>
+      <input id="file-upload" type="file" />
+      <button id="voice-btn">🎤</button>
+      <button id="send-btn">Send</button>
+    </footer>
+
+    <div id="chat-history"></div>
+  </section>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
